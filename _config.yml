@@ -11,6 +11,9 @@ url: "https://actin.github.io"
 ls: false
 
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
+title: Knowledge Box
 permalink: pretty
 
+plugins:
+  - jekyll-feed
 
