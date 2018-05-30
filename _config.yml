@@ -1,5 +1,5 @@
 theme: jekyll-theme-hacker
-url: "http://actin.github.io"
+url: "https://actin.github.io"
 ls: false
 
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
