@@ -4,3 +4,9 @@ ls: false
 
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
 permalink: pretty
+
+defaults:
+  - scope:
+      path: "img"
+    values:
+    image: true
