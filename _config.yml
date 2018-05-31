@@ -2,7 +2,6 @@ theme: jekyll-theme-hacker
 url: "https://actin.github.io"
 ls: false
 
-exclude: [LICENSE, CNAME, .gitignore, Gemfile, Gemfile.lock]
 title: Knowledge Box
 permalink: pretty
 
