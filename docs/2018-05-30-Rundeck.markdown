@@ -1,3 +1,7 @@
+---
+layout: post
+title: Rundeck 설정하기
+---
 # Rundeck 설정하기
 
 ## 다운로드
