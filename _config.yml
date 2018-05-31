@@ -1,10 +1,1 @@
 theme: jekyll-theme-cayman
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts" # previously `post` in Jekyll 2.2.
-    values:
-      layout: "default"
-      
