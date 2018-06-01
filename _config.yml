@@ -1,1 +1,8 @@
 theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+paginate: 5
