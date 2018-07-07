@@ -4,6 +4,7 @@ date:   2018-06-01 23:53:00
 categories: program
 tags: rundeck
 toc: true
+typora-root-url: ..
 ---
 
 
@@ -40,8 +41,9 @@ toc: true
 
 오른쪽 상단의 설정에서 **[Key Storage]** 메뉴를 이용하여 암호를 설정하자.
 
-
 ![](/assets/rundeck01.png)
+
+
 프로젝트 설정에서 Default Node Executor -> WinRM 옵션을 활성화 후 아까 생성한 키를 선택합니다.
 
 ![](/assets/rundeck02.png)
