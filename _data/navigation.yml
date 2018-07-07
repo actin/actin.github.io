@@ -10,6 +10,12 @@ main:
   - title: "Category"
     url: /categories/
     
+help:
+  - title: "닷넷 개발이야기"
+    url: http://www.sysnet.pe.kr
+  - title: "허승욱 홈피"
+    url:  http://rossheo.com
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

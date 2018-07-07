@@ -60,11 +60,12 @@ winrm set winrm/config/client/auth @{Basic="true"}
 winrm set winrm/config/service/auth @{Basic="true"}
 winrm set winrm/config/service @{AllowUnencrypted="true"}
 ```
-windows server 2012 인 경우 powershell 실행 권한이 필요하다.
+
+**Windows server 2012** 인 경우 powershell 실행 권한이 필요하다.
+{: .notice--info}
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ```
-
 
 
