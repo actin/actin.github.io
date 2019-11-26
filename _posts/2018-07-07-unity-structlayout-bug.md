@@ -1,6 +1,7 @@
 ---
+layout: post
 title: "Unity3D 2017 StructLayout 버그"
-categories: program
+categories: devlog
 tags: unity3d
 toc: true
 typora-root-url: ..

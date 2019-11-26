@@ -1,6 +1,7 @@
 ---
+layout: post
 title: "명령창 열기 Windows 10 context menu "
-categories: program
+categories: devlog
 tags: windows
 toc: true
 typora-root-url: ..
@@ -51,7 +52,7 @@ typora-root-url: ..
    ![1531270810132](/assets/cmd-context-6.png)
 
 
-9. cmd 의 **HideBasedOnVelocityId** 의 이름을 **ShowBasedOnVelocityId** 로 변경한다.
+9. cmd 의 `HideBasedOnVelocityId` 의 이름을 `ShowBasedOnVelocityId` 로 변경한다.
 
 	![1531272384763](/assets/cmd-context-7.png)
 
