@@ -2,24 +2,24 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               Storm
+title:               STORM
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
-url:                 https://actin.github.io
+url:                 https://blog.actin.kr
 
 # Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
 baseurl:             ""
 
 # A very short description of your page
-tagline:             모든게 궁금한 개발자
+tagline:             짧은 지식 저장소
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  지루함을 싫어하는 개발자.
-  새로운걸 배우고 싶어 합니다.
+  KEEP CALM AND CARRY ON
+
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
@@ -111,6 +111,7 @@ exclude:
   - package-lock.json
   - Gemfile
   - Gemfile.lock
+  - vendor
 
 kramdown:
   footnote_backlink: '&#x21a9;&#xfe0e;'

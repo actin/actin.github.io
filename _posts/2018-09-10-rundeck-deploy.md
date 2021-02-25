@@ -2,9 +2,9 @@
 layout: post
 title : "Rundeck 배포 구성하기"
 categories : devlog
-tags : rundeck
+tags : infra
 toc : true
-typora-root-url : ..
+typora-root-url: ..
 ---
 
 
@@ -13,27 +13,29 @@ typora-root-url : ..
 
 아래의 그림은 배포 과정을 간략하게 정리하였습니다.
 
-![1539672269924](/assets/rundeck-deplay-12.png)
+![1539672269924](assets/rundeck-deplay-12.png)
 
 ## 배포를 위한 준비
 
 * 각 노드들은 WinRM 설정이 되어 rundeck 과 연동이 되는지 확인이 필요합니다.
 
   프로젝트의 [commands] 메뉴의 기능으로 각 설정 되어 있는 노드의 상태를 확인합니다. 
-  ![1537258291633](/assets/rundeck-deplay-03.png)
+  ![1537258291633](assets/rundeck-deplay-03.png)
 
   연결이 정상적이지 않다면, 방화벽이 오픈 되어 있는지, 접속 계정 아이디,암호가 옳바른지 확인 합니다.
 
 * AWS command CLI 설치
   Windows [64비트](https://s3.amazonaws.com/aws-cli/AWSCLI64.msi), [32비트](https://s3.amazonaws.com/aws-cli/AWSCLI32.msi)
 *  S3 cli 사용을 위한 설정이 필요합니다. 윈도우 커맨드창을 실행한 후 aws configure 를 실행하여, Access Key 와 Secret Access Key 를 입력 하시면 됩니다.
-  ```
+
+  ```powershell
   c:\> aws configure
   AWS Access Key ID :
   AWS Secret Access Key :
   Default region name [] :
   Default output format [] : 
   ```
+
 
 * windows server 2012 인경우 Powershell 실행 권한 부여
 

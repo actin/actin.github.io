@@ -17,7 +17,7 @@ Jekyll Docker 의 문서에 아주 잘 나와 있는데 <span style="color:blue"
 
 <https://github.com/envygeeks/jekyll-docker/blob/master/README.md>
 
-간략히 내용을 정리 해보면, jekyll_home 생성 후  bundle 파일을 저장하기 위한 커스텀 폴더 생성  jekyll bundle  update 를 실행하여 필요한 bundle 파일을 업데이트 후 -w 옵션을 이용한 변경 감지를 통해서 자동 정적 페이지 생성을 한다.  입니다.
+간략히 내용을 정리 해보면, jekyll_home 생성 후  bundle 파일을 저장하기 위한 커스텀 폴더 생성  `jekyll bundle  update` 를 실행하여 필요한 bundle 파일을 업데이트 후 `-w` 옵션을 이용한 변경 감지를 통해서 자동 정적 페이지 생성을 한다.  입니다.
 
 `Docker` 저장소에서 `jekyll` 검색한후 `jekyll/jekyll` 이미지를 다운로드 합니다.![](/assets/jekyll-1.png)
 
@@ -25,7 +25,7 @@ Jekyll Docker 의 문서에 아주 잘 나와 있는데 <span style="color:blue"
 
 `jekyll`  의 원본이 위치한 경로의 접근 권한을 `everyone` 으로 읽기쓰기가 가능 하도록 먼저 설정합니다. 실행권한을 최고 권한으로 실행했지만 결국은 권한이 없다고 에러가.. 꼭! `everyone` 으로 읽기 쓰기를 설정하세요.
 
-저는 jekyll_home 공유 폴더를 생성 후 이미 theme 를 생성한 폴더와 파일을 준비 하였습니다. 이 부분은 여기서 다루지 않을 예정입니다. 
+저는 `jekyll_home` 공유 폴더를 생성 후 이미 theme 를 생성한 폴더와 파일을 준비 하였습니다. 이 부분은 여기서 다루지 않을 예정입니다. 
 
 ![1565786005518](/assets/jekyll-6.png)
 
@@ -47,7 +47,7 @@ jekyll Docker `Gemfile` 의 리스트에서 의존성 파일을 설치 하게 �
 docker run --rm \
   --volume="/volume1/jekyll_home:/srv/jekyll" \
   --volume="/volume1/jekyll_home/vendor/bundle:/usr/local/bundle" \
-  -it jekyll/jekyll \
+  -it jekyll/jekyll:3.8.6 \
   bundle update
 ```
 
@@ -63,11 +63,13 @@ docker run --rm \
 
 이제 정적 페이지를 생성 하기 위해서는 bundle 에 캐싱한 내용을 이용하여 아래의 명령을 실행하면,  `jekyll_home/_site` 폴더가 생성되고 정적 파일들이 생성되는 것을 확인 할 수 있습니다.
 
+최신 버전의 jekyll 에서는 bundle install 시 번들 경로가 문제가 될수 있습니다.
+
 ```
 docker run --rm \
   --volume="/volume1/jekyll_home:/srv/jekyll" \
   --volume="/volume1/jekyll_home/vendor/bundle:/usr/local/bundle" \
-  -it jekyll/jekyll \
+  -it jekyll/jekyll:3.8.6 \
   jekyll build
 ```
 
